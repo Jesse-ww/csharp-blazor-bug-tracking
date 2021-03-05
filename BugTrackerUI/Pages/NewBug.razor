@@ -9,11 +9,14 @@
     <button type="submit">Add Bug</button>
 </EditForm>
 
+@inject IBugService BugService
+@inject NavigationManager NavService
+
 @code {
-    [Inject]
-    public IBugService BugService;
-    [Inject]
-    public NavigationManager NavService;
+    @*[Inject]
+    public IBugService BugService;*@
+    @*[Inject]
+    public NavigationManager NavService;*@
     public Bug AddBug = new Bug();
 
     protected void HandleValidSubmit ()
